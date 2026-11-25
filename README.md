@@ -20,6 +20,7 @@ trees. Older snapshots (`niod.old`, `niod.012`) were not included.
 ## Pages
 
 Chris's old programs page is at https://nystrom.family/chris/old/programs.html.
+All of Chris's code: https://nystrom.family/chris/code/
 
 ## License
 
