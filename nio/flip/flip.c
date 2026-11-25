@@ -21,7 +21,6 @@
  *
  *    Chris Nystrom
  *
- *    E-Mail: ccn@olenska.hn.org, nystrom@cactus.org,
  *              or cnystrom@gmail.com
  *
  *    Soli Deo Gloria
