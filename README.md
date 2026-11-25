@@ -27,6 +27,8 @@ All of Chris's code: https://nystrom.family/chris/code/
 Chris's files are typically under the GNU GPL 2 or LGPL 2.1; see each
 header.
 
+The GNU GPL 2 (or later) text is in LICENSE; the GNU LGPL 2.1 (or later) text is in COPYING.LESSER.
+
 ## Third-party files removed
 
 - Todd C. Miller `strlcat.c` / `strlcpy.c` (under `niod/misc_lib/`)
