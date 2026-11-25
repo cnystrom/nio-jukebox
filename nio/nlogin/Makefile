@@ -53,20 +53,14 @@ HEADERS = \
 
 #files to compile
 CCFILES = \
-	colors.c \
-	SDL_prim.c \
 	screen.c \
 	misc_io.c \
-	fonts.c \
 	images.c \
-	text.c \
 	home_dir.c \
 	file_xfr.c \
 	nio_sdl.c \
 	mouse.c \
 	keyboard.c \
-	playlib.c \
-	sound.c \
 	url.c \
 	misc.c \
 	term.c \
