@@ -17,6 +17,10 @@ From Chris Nystrom's personal source archive (the hallie tree), posted
 publicly at his request. This repo uses the newest `nio` and `niod`
 trees. Older snapshots (`niod.old`, `niod.012`) were not included.
 
+## Pages
+
+Chris's old programs page is at https://nystrom.family/chris/old/programs.html.
+
 ## License
 
 Chris's files are typically under the GNU GPL 2 or LGPL 2.1; see each
