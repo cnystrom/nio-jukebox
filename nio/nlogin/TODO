@@ -1,0 +1,42 @@
+
+               nlogin - application browser
+               ----------------------------
+
+Bugs:
+----
+lock mouse-buttons so they are not missed
+nio_term scroll 
+
+Security
+--------
+get rid of all strcpy (need to use strn versions)
+
+Feature Requests:
+----------------
+
+Allow user to resize
+- SDL_RESIZABLE as flag to SDL_SetVideoMode
+- SDL_ResizeEvent
+Print at in nio_term
+Change size in nio term
+Change home location in nio term
+
+Command to clear file cache
+
+Add draw_circle
+Add draw_triangle
+Add draw_polygon (?)
+
+Make versions for other OS (Windows, MacOS X, etc)
+- need openpty() for Solaris
+- need fork(), ssh for W32
+
+Use OpenGL for rendering?
+
+Internationalize
+Is new_rpc optimal for this application?
+- Can it be faster?
+
+Smarter install script (root and non-root)
+- auto-insall SDL libs?
+

@@ -1,0 +1,10 @@
+
+misc_lib
+--------
+
+tty_echo: control tty echo
+
+uio:      i/o w/o stdio
+
+wlog:     log info (handy when app does not have terminal)
+

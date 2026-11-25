@@ -1,0 +1,7 @@
+
+Firewall:
+
+corkscrew + tunneling:
+
+  ssh -L 32662:shuttle.newio.org:32662 shuttle.newio.org
+
