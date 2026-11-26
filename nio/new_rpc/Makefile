@@ -2,7 +2,7 @@
 CC =  gcc
 #BIN = buffer
 BIN = server client
-LIB = -lnsl  # Linux
+LIB =  # Linux
 #LIB = -lnsl -lsocket # Solaris
 
 CFLAGS = -I.. -O -Wall -g -DDEBUG -DUNIX

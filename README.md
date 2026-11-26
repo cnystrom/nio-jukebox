@@ -43,8 +43,21 @@ The GNU GPL 2 (or later) text is in LICENSE; the GNU LGPL 2.1 (or later) text is
 
 ## Build
 
-- `niod`: default gcc and `-std=gnu89` fail because the program defines
-  its own `getline`. `-std=c89` fails on C++-style `//` comments in the
-  sources. It did not build on a current gcc without changing the code,
-  which was not done.
-- The NIO client and libraries expect SDL. They were not built here.
+Updated November 2026 so the server side builds with a current gcc
+on Linux:
+
+- `niod`: run `niod/compile.sh`. The program's own `getline()` is now
+  `my_getline()`, so it no longer clashes with the C library.
+- `nio/` (`misc_lib`, `new_rpc`, `nio_lib`, `niod`, `demo1`, `flip`,
+  `jukebox`, `nio_demo_apps`): run `make` in each directory, in that
+  order.
+- `-lnsl` was dropped from the Makefiles, because current glibc no
+  longer has libnsl.
+- `strlcpy` and `strlcat` in `niod/misc_lib` are new, original
+  replacements for the removed third-party files.
+
+The NIO client `nio/nlogin` still does not build. It needs the
+removed third-party font, text and colour files.
+
+`niod/clean.sh` also deletes every `*.log` and `*.tmp` file in
+`/var/tmp`.

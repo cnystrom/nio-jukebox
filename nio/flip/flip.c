@@ -355,7 +355,7 @@ get_slot(int x, int y)
 }
 
 void
-flip_slot(slot)
+flip_slot(int slot)
 {
   if (slot < 0 || slot > 8) {
     nio_print("Error in flip_slot(): bad slot.\n");

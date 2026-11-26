@@ -7,7 +7,7 @@ CC =  gcc
 BIN = demo1.nio
 
 #LIB = -lnsl -lsocket # Solaris
-LIB = -lnsl -lutil
+LIB = -lutil
 
 CFLAGS = -I../new_rpc -I../nio_lib -O -Wall -g -DDEBUG -DUNIX
 

@@ -335,6 +335,10 @@ wr_buffer(int fd_out, int fd_in)
   bc = read(fd_in, buf, BUF_SIZE);
 
   while (bc <= 0) {
+    if (bc == 0) {  // end of input: the client has gone away
+      wlog("wr_buffer(): connection closed\n");
+      exit(-1);
+    }
     wlog("wr_buffer(): read failed. re-writing... \n");
     write(fd_out, buf, len); // Maybe they did not get message?
     wlog("wr_buffer(): re-reading... \n");

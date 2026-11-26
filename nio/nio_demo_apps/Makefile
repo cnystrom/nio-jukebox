@@ -7,7 +7,7 @@ CC =  gcc
 BIN = list.nio screen_test.nio char_test.nio string_test.nio box_test.nio dot_test.nio line_test.nio arc_test.nio beep_test.nio mouse_test.nio sound_off.nio startrek.nio
 
 #LIB = -lnsl -lsocket # Solaris
-LIB = -lnsl -lutil
+LIB = -lutil
 
 CFLAGS = -I../new_rpc -I../nio_lib -O -Wall -g -DDEBUG -DUNIX
 

@@ -10,3 +10,10 @@ core
 *.au
 *.bak
 *~
+
+# build outputs
+*.nio
+/niod/niod
+/nio/niod/niod
+/nio/new_rpc/client
+/nio/new_rpc/server
