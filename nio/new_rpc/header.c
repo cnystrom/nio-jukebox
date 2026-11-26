@@ -22,8 +22,6 @@
  *    Chris Nystrom
  *
  *    E-Mail: cnystrom@gmail.com
- *    Blog:   http://conversazione.blogspot.com
- *    AIM:    nystromchris
  *
  *    Soli Deo Gloria
  *
