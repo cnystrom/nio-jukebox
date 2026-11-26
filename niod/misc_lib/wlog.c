@@ -55,7 +55,7 @@ PUBLIC int wlog(const char *format, ...)
 	va_list ap;
 
 	va_start(ap, format);
-	vsprintf(line, format, ap);
+	vsnprintf((char *) line, sizeof(line), format, ap);
 	va_end(ap);
 
 	return (uio_put_line(fd, line));

@@ -7,7 +7,7 @@ CC =  gcc
 BIN = niod
 
 #LIB = -lnsl -lsocket # Solaris
-LIB = -lnsl -lutil
+LIB = -lutil
 
 CFLAGS = -I../misc_lib -I../nio_lib -O -Wall -g -DDEBUG -DUNIX
 

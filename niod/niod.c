@@ -37,7 +37,7 @@
 #define HOSTNAME_LEN  (256)
 #define BIN_PATH  "/usr/local/nio/bin/"
 
-int getline(char *line);
+int my_getline(char *line);
 void strip_nl(char *s);
 void print_string(const char *s);
 
@@ -59,18 +59,18 @@ int main(int argc, char *argv[])
 
 	usleep(10000);
 
-	printf(s);
+	printf("%s", s);
 	fflush(stdout);
 
 	wlog("Welcome sent...\n");
 
-	if (getline(s) > 0) {
+	if (my_getline(s) > 0) {
 		wlog("s = |%s|\n", s);
 		strip_nl(s);
 		wlog("s = |%s|\n", s);
 
 		if (strncmp(s, version, 12)) {
-			printf(version);
+			printf("%s", version);
 			fflush(stdout);
 			wlog("Wrong browser version.\n");
 
@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
 		}
 
 		wlog("Getting command...\n");
-		getline(s);
+		my_getline(s);
 
 		wlog("s = |%s|\n", s);
 		strip_nl(s);
@@ -118,7 +118,7 @@ int main(int argc, char *argv[])
 	exit(0);
 }
 
-int getline(char *line)
+int my_getline(char *line)
 {
 	if (fgets(line, BUFSIZ, stdin) == NULL)
 		return 0;
