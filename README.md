@@ -24,10 +24,16 @@ All of Chris's code: https://nystrom.family/chris/code/
 
 ## License
 
-Chris's files are typically under the GNU GPL 2 or LGPL 2.1; see each
-header.
+nio-jukebox is licensed under the GNU General Public License, version 2.
+The full text is in [LICENSE](LICENSE).
 
-The GNU GPL 2 (or later) text is in LICENSE; the GNU LGPL 2.1 (or later) text is in COPYING.LESSER.
+Each file's own header still applies. Most of Chris's files say "GPL
+version 2 or (at your option) any later version".
+
+The `niod/misc_lib` files are under the GNU LGPL 2.1 or later, as their
+headers say. The LGPL text is in
+[docs/COPYING.LESSER](docs/COPYING.LESSER). The LGPL 2.1 allows that
+code to be used under the GPL 2, so the project as a whole is GPL 2.
 
 ## Third-party files removed
 
